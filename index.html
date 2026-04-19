@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Położna PRO | Profesjonalna Opieka</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff758c;
+      --secondary: #ff7eb3;
+      --dark: #2d3436;
+      --light: #ffffff;
+      --accent: #6c5ce7;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fdfbfb;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* Nagłówek z gradientem */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Menu nawigacyjne */
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    /* Bajer: Karty z animacją */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #eee;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(255, 117, 140, 0.2);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    /* Formularz kontaktowy */
+    .contact-container {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+
+    button {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+      transition: opacity 0.3s;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 50px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #ffe0e6;
+      color: var(--primary);
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Położna PRO</h1>
+  <p>Twoje wsparcie w najpiękniejszej podróży życia</p>
+</header>
+
+<nav>
+  <a href="#o-mnie">O mnie</a>
+  <a href="#uslugi">Usługi</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="o-mnie" class="hero">
+  <span class="badge">Zaufaj profesjonalistce</span>
+  <h2>Cześć, jestem Anna</h2>
+  <p>Wspieram przyszłe mamy na każdym etapie ciąży oraz w pierwszych chwilach z maleństwem. Moja misja to spokój, bezpieczeństwo i wiedza, którą dzielę się z Tobą.</p>
+</section>
+
+<section id="uslugi">
+  <h2 style="text-align: center; margin-bottom: 40px;">Jak mogę Ci pomóc?</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Szkoła Rodzenia</h3>
+      <p>Przygotuję Was teoretycznie i praktycznie do porodu oraz opieki nad noworodkiem.</p>
+    </div>
+    <div class="card">
+      <h3>Wizyty Patronażowe</h3>
+      <p>Odwiedzę Cię w domu, sprawdzę stan zdrowia maluszka i pomogę w karmieniu piersią.</p>
+    </div>
+    <div class="card">
+      <h3>Konsultacje Online</h3>
+      <p>Szybka pomoc i odpowiedzi na Twoje pytania bez wychodzenia z domu.</p>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <h2 style="text-align: center;">Napisz do mnie</h2>
+  <div class="contact-container">
+    <form action="#">
+      <input type="text" placeholder="Twoje Imię" required>
+      <input type="email" placeholder="Twój E-mail" required>
+      <textarea rows="5" placeholder="W czym mogę pomóc?"></textarea>
+      <button type="submit">Wyślij wiadomość</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Położna PRO - Wszystkie prawa zastrzeżone.</p>
+  <p><small>Projekt stworzony z sercem dla mam.</small></p>
+</footer>
+
+</body>
+</html>
